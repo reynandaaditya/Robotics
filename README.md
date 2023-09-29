@@ -1,1 +1,4 @@
 # Robotics
+
+NAMA : REYNANDA ADITYA
+NIM  : 1103202154
