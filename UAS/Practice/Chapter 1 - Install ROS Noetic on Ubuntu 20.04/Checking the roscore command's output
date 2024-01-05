@@ -1,0 +1,31 @@
+Let's check out the ROS topics and ROS parameters that are created after running
+roscore. The following command will list the active topics in the Terminal:
+rostopic list
+
+The list of topics is as follows, as per our discussion of the rosout node's subscribe
+/rosout topic. This contains all the log messages from the ROS nodes. /rosout_agg
+will rebroadcast the log messages:
+/rosout
+/rosout_agg
+
+The following command lists the parameters that are available when running roscore.
+The following command is used to list the active ROS parameter:
+rosparam list
+
+These parameters are mentioned here; they provide the ROS distribution name, version,
+the address of the roslaunch server, and run_id, where run_id is a unique ID
+associated with a particular run of roscore:
+/rosdistro
+/roslaunch/uris/host_robot_virtualbox__51189
+/rosversion
+/run_id
+
+The list of ROS services that's generated when running roscore can be checked by using
+the following command:
+rosservice list
+
+The list of services that are running is as follows:
+/rosout/get_loggers
+/rosout/set_logger_level
+These ROS services are generated for each ROS node, and they are used to set the logging
+levels.
